@@ -12,7 +12,7 @@ def weekday_name(day_of_week):
         >>> weekday_name(9)
         >>> weekday_name(0)
     """
-
+# TODO: can move outside of function and change name
     weekdays = {
         1: 'Sunday',
         2: 'Monday',

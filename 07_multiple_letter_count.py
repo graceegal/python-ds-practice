@@ -11,10 +11,11 @@ def multiple_letter_count(phrase):
     letter_freq = {}
 
     for letter in phrase:
-        if letter in letter_freq:
-            letter_freq[letter] += 1
-        else:
-            letter_freq[letter] = 1
+        letter_freq[letter] = letter_freq.get(letter, 0)+1
+        # if letter in letter_freq:
+        #     letter_freq[letter] += 1
+        # else:
+        #     letter_freq[letter] = 1
 
     return letter_freq
 

@@ -13,4 +13,5 @@ def last_element(lst):
         True
     """
 
-    return None if lst == [] else lst[-1]
+    if lst:
+        return lst[-1]

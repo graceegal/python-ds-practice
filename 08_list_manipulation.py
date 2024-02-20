@@ -50,20 +50,20 @@ def list_manipulation(lst, command, location, value=None):
     # if add value to end: lst.append(value) --> lst.insert(-1, value)
 
 
-    if command not in ['add', 'remove'] or location not in ['beginning', 'end']:
-        return None
+    # if command not in ['add', 'remove'] or location not in ['beginning', 'end']:
+    #     return None
 
     if command == 'add':
         if location == 'beginning':
             lst.insert(0, value)
             return lst
-        else:
+        elif location == 'end':
             lst.append(value)
             return lst
-    else:
+    elif command == 'remove':
         if location == 'beginning':
             return lst.pop(0)
-        else:
+        elif location == 'end':
             return lst.pop()
 
 
